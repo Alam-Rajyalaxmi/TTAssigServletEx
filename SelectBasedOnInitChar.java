@@ -4,7 +4,7 @@ public class SelectBasedOnInitChar {
 
 	public static void main(String[] args) {
 		try {
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/emp","root","rootar");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/emp","userN","psw");
 			Statement stmt=con.createStatement();
 			ResultSet res=stmt.executeQuery("select * from employee where name like 'Ja%' ");
 			while(res.next())
