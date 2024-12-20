@@ -5,8 +5,8 @@ public class JDBCSelectByOrder {
 
 	public static void main(String[] args) {
 		String url="jdbc:mysql://localhost:3306/emp";
-		String user="root";
-		String psw="rootar";
+		String user="userN"; //userName of your database(mysql,oracle..etc) 
+		String psw="password"; //password of your database(mysql,oracle..etc) 
 		try {
 			Connection con=DriverManager.getConnection(url,user,psw);
 			Statement stmt=con.createStatement();
